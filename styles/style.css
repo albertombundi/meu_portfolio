@@ -296,6 +296,10 @@ body{
 
 }
 
+#linked {
+    max-width: 24px;
+}
+
 .home-imgHover {
     position: absolute;
     top:0;
