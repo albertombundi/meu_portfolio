@@ -78,7 +78,7 @@ body{
 .home {
     height: 100vh;
     width: 100%;
-    /*background: url('home.jpg') no-repeat;*/
+    /*background: url('/imgs/home.png') no-repeat;*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -93,6 +93,7 @@ body{
 .home-content h1 {
     position: relative;
     font-size: 23px;
+    color: white;
     font-weight: 700;
     line-height: 1.2;
 
@@ -133,9 +134,10 @@ body{
 
 
 .home-content p {
+    color: white;
     position: relative;
     font-size: 16px;
-    margin: 20px 0 40px;
+    margin: 7px 0 10px;
 }
 
 .home-content p::before {
@@ -152,10 +154,11 @@ body{
 
 .home-content .btn-box {
     position: relative;
+    top: 15px;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: 65px;
 }
 
 .home-content .btn-box::before {
@@ -316,7 +319,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    width: 120%;
+    width: 150%;
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
@@ -342,26 +345,39 @@ body{
 
 @media (min-width:768px){
 
+    .home {
+
+        height: 100vh;
+        width: 100%;
+        background: url('/imgs/home768x592.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 3%;
+    }
+
+
     .logo{
         width: 22%;
         font-size: 20px;
 
     }
     .navbar a {
-        font-size: 18px;
-        margin-left: 32px;
+        font-size: 15px;
+        margin-left: 17px;
     }
 
     .home-content{
-        max-width: 600px;
+        max-width: 373px;
     }
 
     .home-content h1{
-        font-size: 41px;
+        font-size: 42px;
     }
 
     .home-content h3{
-        font-size: 30px;
+        font-size: 19px;
     }
 
     .home-content p {
@@ -369,12 +385,124 @@ body{
     }
 
     .home-content .btn-box {
-        width: 345px;
+        width: 355px;
+        height: 50px;
     }
 
     .btn-box a {
         width: 156px;
         height: 100%;
+        letter-spacing: -1px;
     }
 
 }
+
+
+@media (min-width:1024px){
+
+    .home {
+        
+        height: 100vh;
+        width: 100%;
+        background: url('/imgs/home768x592.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 3%;
+    }
+
+    .logo{
+        width: 22%;
+        font-size: 20px;
+
+    }
+    .navbar a {
+        font-size: 18px;
+        margin-left: 33px;
+    }
+
+    .home-content{
+        max-width: 508px;
+    }
+
+    .home-content h1{
+        font-size: 56px;
+    }
+
+    .home-content h3{
+        font-size: 35px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .home-content .btn-box {
+        width: 444px;
+    
+    }
+
+    .btn-box a {
+        width: 156px;
+        height: 100%;
+        letter-spacing: -1px;
+    }
+
+}
+
+
+@media (min-width:1200px){
+
+    .home {
+        
+        height: 100vh;
+        width: 100%;
+        background: url('/imgs/home.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 3%;
+    }
+
+    .logo{
+        width: 22%;
+        font-size: 20px;
+
+    }
+    .navbar a {
+        font-size: 18px;
+        margin-left: 56px;
+    }
+
+    .home-content{
+        max-width: 600px;
+    }
+
+    .home-content h1{
+        font-size: 60px;
+        width: 500px;
+    }
+
+    .home-content h3{
+        font-size: 40px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .home-content .btn-box {
+        width: 444px;
+    
+    }
+
+    .btn-box a {
+        width: 156px;
+        height: 100%;
+        letter-spacing: -1px;
+    }
+
+}
+
